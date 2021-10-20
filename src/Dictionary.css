@@ -1,0 +1,28 @@
+.Dictionary {
+    font-family: 'Itim', cursive;
+    color: #BDA27E;
+    opacity: 0.9;
+    font-size: 24px;
+}
+.Dictionary h1 {
+    font-size: 45px;
+}
+.Dictionary section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #2C2C2C;
+    box-shadow: 5px 10px 15px rgb(5 3 5 / 100%);
+    border-radius: 10px;
+}
+.Dictionary input {
+    width: 80%;
+    height: 40px;
+    padding: 10px 6px;
+    border: tan solid 5px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+
+}
