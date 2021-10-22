@@ -32,3 +32,12 @@
     font-size: 36px;
     color: #B0B0B0;
 }
+.App footer {
+    color:#b19876 ;
+}
+.App a {
+  color:#B0B0B0 ;  
+}
+ .App a:hover {
+     color: blue;
+ }
