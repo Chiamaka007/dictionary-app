@@ -8,7 +8,7 @@ export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
-  const [photos, setPhotos] = useState(null)
+  const [photos, setPhotos] = useState(null);
 
   function handleDictionaryResponse(response) {
     setResults(response.data[0]);
@@ -45,22 +45,20 @@ export default function Dictionary(props) {
 
   if (loaded) {
     return (
-      <div className="container">
-        <div className="m-5 Dictionary">
-          <section>
-            <form onSubmit={handleSearch}>
-              <h1 className="text-center">What word are you looking for?</h1>
-              <input
-                type="Search"
-                autoFocus={true}
-                onChange={handleChange}
-                defaultValue={props.defaultKeyword}
-              />
-            </form>
-          </section>
-          <Results results={results} />
-          <Photos photos={photos} />
-        </div>
+      <div className="m-5 Dictionary">
+        <section>
+          <form onSubmit={handleSearch}>
+            <h1 className="text-center">What word are you looking for?</h1>
+            <input
+              type="Search"
+              autoFocus={true}
+              onChange={handleChange}
+              defaultValue={props.defaultKeyword}
+            />
+          </form>
+        </section>
+        <Results results={results} />
+        <Photos photos={photos} />
       </div>
     );
   } else {
